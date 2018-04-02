@@ -18,21 +18,21 @@ class ViewController: UIViewController {
     
     //MARK: - IBOutlet Declarations
     
-    @IBOutlet weak var bank1ViewBackground: CustomizableImageView!
-    @IBOutlet weak var bank2ViewBackground: CustomizableImageView!
-    @IBOutlet weak var bank3ViewBackground: CustomizableImageView!
-    @IBOutlet weak var player1ViewBackground: CustomizableImageView!
-    @IBOutlet weak var player2ViewBackground: CustomizableImageView!
-    @IBOutlet weak var player3ViewBackground: CustomizableImageView!
+    @IBOutlet private weak var bank1ViewBackground: CustomizableImageView!
+    @IBOutlet private weak var bank2ViewBackground: CustomizableImageView!
+    @IBOutlet private weak var bank3ViewBackground: CustomizableImageView!
+    @IBOutlet private weak var player1ViewBackground: CustomizableImageView!
+    @IBOutlet private weak var player2ViewBackground: CustomizableImageView!
+    @IBOutlet private weak var player3ViewBackground: CustomizableImageView!
     
-    @IBOutlet weak var bankCard1: UIImageView!
-    @IBOutlet weak var bankCard2: UIImageView!
-    @IBOutlet weak var bankCard3: UIImageView!
-    @IBOutlet weak var playerCard1: UIImageView!
-    @IBOutlet weak var playerCard2: UIImageView!
-    @IBOutlet weak var playerCard3: UIImageView!
+    @IBOutlet private weak var bankCard1: UIImageView!
+    @IBOutlet private weak var bankCard2: UIImageView!
+    @IBOutlet private weak var bankCard3: UIImageView!
+    @IBOutlet private weak var playerCard1: UIImageView!
+    @IBOutlet private weak var playerCard2: UIImageView!
+    @IBOutlet private weak var playerCard3: UIImageView!
     
-    @IBOutlet weak var messageBox: UIButton!
+    @IBOutlet private weak var messageBox: UIButton!
     
     //MARK: - viewDidLoad
     
@@ -46,31 +46,11 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
     }
     
-    //MARK: - Card Layout Functions
-    
-    /// Rotates the 3rd cards 90 degrees
-    func rotateCard(){
-        //rotate rect
-        bank3ViewBackground.transform = CGAffineTransform(rotationAngle: .pi / 2); //90 degree//rotation in radians
-    }
-    
-    /// Rounds the corners of the cards
-    ///
-    /// - Parameter cornerRadius: This is the degree to which it rounds them
-    func cornerRadiusOfCards(cornerRadius: CGFloat){
-        bank1ViewBackground.layer.cornerRadius = cornerRadius
-        bank2ViewBackground.layer.cornerRadius = cornerRadius
-        bank3ViewBackground.layer.cornerRadius = cornerRadius
-        player1ViewBackground.layer.cornerRadius = cornerRadius
-        player2ViewBackground.layer.cornerRadius = cornerRadius
-        player3ViewBackground.layer.cornerRadius = cornerRadius
-    }
-    
     //MARK: - Setup Hand Function
     
     
     /// Resets Hand, Fisrt two cards images and values are set to random numbers, the 3rd cards are set to 0
-    func resetHand() {
+    private func resetHand() {
         
         messageBox.isHidden = true
         bank3ViewBackground.isHidden = true
@@ -103,7 +83,7 @@ class ViewController: UIViewController {
     /// Genrates a random image name and corresponding card value
     ///
     /// - Returns: Image name for card and it's value (0-9)
-    func setCardFace() -> (cardName: String, cardNumericValue: Int) {
+    private func setCardFace() -> (cardName: String, cardNumericValue: Int) {
         
         var cardName = "card"
         let randomCardNumber = Int(arc4random_uniform(52) + 1)
@@ -120,7 +100,7 @@ class ViewController: UIViewController {
     /// - If Yes the it changes to message box to the 'Natual' message
     ///
     /// - Returns: true for 'Natrual'
-    func checkForNatruals() -> Bool {
+    private func checkForNatruals() -> Bool {
         if gameLogic.areCardTotalsNatrual() {
             messageBox.setImage(#imageLiteral(resourceName: "messageNaturalHand"), for: .normal)
             return true
@@ -132,7 +112,7 @@ class ViewController: UIViewController {
     /// Checks if the player should take a 3rd card
     ///
     /// - Returns: returns 'true' for a 3rd card. 'false' for no 3rd card
-    func checkAnswerForPlayerDraw() -> Bool {
+    private func checkAnswerForPlayerDraw() -> Bool {
         if gameLogic.isPlayerDrawCorrect() {
             return true
         }
@@ -143,7 +123,7 @@ class ViewController: UIViewController {
     /// Checks if the banker should take a 3rd card
     ///
     /// - Returns: returns 'true' for a 3rd card. 'false' for no 3rd card
-    func checkAnswerForBankDraw() -> Bool {
+    private func checkAnswerForBankDraw() -> Bool {
         let answerCode = gameLogic.isBankDrawCorrect(isPlayers3rdViewHidden: player3ViewBackground.isHidden)
         switch answerCode {
         case 0:
@@ -170,7 +150,7 @@ class ViewController: UIViewController {
         /// Checks if the right number of cards have been drawn to determin the winner
         ///
         /// - Returns: 'true' if the card count is correct
-        func checkWinAnswer() -> Bool {
+        private func checkWinAnswer() -> Bool {
             if gameLogic.checkDraw(isBanks3rdViewHidden: bank3ViewBackground.isHidden, isPlayers3rdViewHidden: player3ViewBackground.isHidden) {
                 return true
             }
@@ -186,7 +166,7 @@ class ViewController: UIViewController {
     /// - Parameter sender:
     /// - 0 - Bank Draw
     /// - 1 - Player Draw
-    @IBAction func drawCard(_ sender: UIButton) {
+    @IBAction private func drawCard(_ sender: UIButton) {
         if messageBox.isHidden{
             if checkForNatruals() {
                 messageBox.isHidden = false
@@ -240,7 +220,7 @@ class ViewController: UIViewController {
     /// - 0 - Banker hand wins
     /// - 1 - Tie
     /// - 2 - Player hand wins
-    @IBAction func whoWins(_ sender: UIButton) {
+    @IBAction private func whoWins(_ sender: UIButton) {
         if messageBox.isHidden {
             if checkWinAnswer() || checkForNatruals() {
                 switch (sender.tag) {
@@ -287,7 +267,7 @@ class ViewController: UIViewController {
     /// Button that dismisses the message
     ///
     /// - Parameter sender: The user hits the button to return to the game after a message is made visible
-    @IBAction func messageButton(_ sender: UIButton) {
+    @IBAction private func messageButton(_ sender: UIButton) {
         messageBox.isHidden = true
     }
 }
