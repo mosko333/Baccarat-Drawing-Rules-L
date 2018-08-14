@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_5" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Win View Controller-->
+        <scene sceneID="QeI-px-l0A">
+            <objects>
+                <viewController id="AN1-BK-MNy" customClass="WinViewController" customModule="Baccarat_Drawing_Rules_L" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="OCF-wN-oPH">
+                        <rect key="frame" x="0.0" y="0.0" width="736" height="414"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Baccarat Blue background" translatesAutoresizingMaskIntoConstraints="NO" id="tOF-56-NVc">
+                                <rect key="frame" x="0.0" y="0.0" width="736" height="414"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="Fwq-xi-8Sb" userLabel="containerStack">
+                                <rect key="frame" x="20" y="20" width="696" height="374"/>
+                                <subviews>
+                                    <view alpha="0.0" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GDj-i3-O1y" userLabel="topContainer">
+                                        <rect key="frame" x="0.0" y="0.0" width="696" height="65.333333333333329"/>
+                                        <color key="backgroundColor" red="0.88363069149999995" green="0.91399015019999996" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Oal-L3-jGU" userLabel="middleContainer">
+                                        <rect key="frame" x="0.0" y="80.333333333333329" width="696" height="178.66666666666669"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bankerTitle" translatesAutoresizingMaskIntoConstraints="NO" id="7k8-wR-hgr">
+                                                <rect key="frame" x="148" y="8" width="110" height="22"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="playerTitle" translatesAutoresizingMaskIntoConstraints="NO" id="tJ0-g7-aGH">
+                                                <rect key="frame" x="484" y="8" width="93" height="25"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Line" translatesAutoresizingMaskIntoConstraints="NO" id="pLe-sl-GIw">
+                                                <rect key="frame" x="367" y="-357" width="3" height="544"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <view clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hiR-Sr-WHz" userLabel="bank1ViewBackground" customClass="CustomizableImageView" customModule="Baccarat_Drawing_Rules_L" customModuleProvider="target">
+                                                <rect key="frame" x="263" y="57" width="91" height="131"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <subviews>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="card35" translatesAutoresizingMaskIntoConstraints="NO" id="ls0-oR-F4w" userLabel="bankCard1">
+                                                        <rect key="frame" x="4" y="7" width="83" height="118"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="8"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </imageView>
+                                                </subviews>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="8"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <view clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="urd-jC-JPz" userLabel="bank2ViewBackground" customClass="CustomizableImageView" customModule="Baccarat_Drawing_Rules_L" customModuleProvider="target">
+                                                <rect key="frame" x="161" y="57" width="90" height="131"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <subviews>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="card27" translatesAutoresizingMaskIntoConstraints="NO" id="wAi-nh-eJf" userLabel="bankCard2">
+                                                        <rect key="frame" x="4" y="7" width="83" height="118"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="8"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </imageView>
+                                                </subviews>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="8"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <view clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Lxy-gy-ANe" userLabel="bank3ViewBackground" customClass="CustomizableImageViewRotateAndRadius" customModule="Baccarat_Drawing_Rules_L" customModuleProvider="target">
+                                                <rect key="frame" x="15" y="77" width="131" height="91"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <subviews>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="card10" translatesAutoresizingMaskIntoConstraints="NO" id="2GZ-iI-Snv" userLabel="bankCard3">
+                                                        <rect key="frame" x="4" y="7" width="83" height="118"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="8"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </imageView>
+                                                </subviews>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="8"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <view clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9nI-hO-lMz" userLabel="player1ViewBackground" customClass="CustomizableImageView" customModule="Baccarat_Drawing_Rules_L" customModuleProvider="target">
+                                                <rect key="frame" x="381" y="57" width="91" height="131"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <subviews>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="card35" translatesAutoresizingMaskIntoConstraints="NO" id="jhB-Sf-z4F" userLabel="playerCard1">
+                                                        <rect key="frame" x="4" y="7" width="83" height="118"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="8"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </imageView>
+                                                </subviews>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="8"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <view clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AtD-He-jaT" userLabel="player2ViewBackground" customClass="CustomizableImageView" customModule="Baccarat_Drawing_Rules_L" customModuleProvider="target">
+                                                <rect key="frame" x="485" y="57" width="91" height="132"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <subviews>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="card35" translatesAutoresizingMaskIntoConstraints="NO" id="FQz-7F-Nha" userLabel="playerCard2">
+                                                        <rect key="frame" x="4" y="7" width="82" height="119"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="8"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </imageView>
+                                                </subviews>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="8"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <view clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="J1O-AF-StX" userLabel="player3ViewBackground" customClass="CustomizableImageViewRotateAndRadius" customModule="Baccarat_Drawing_Rules_L" customModuleProvider="target">
+                                                <rect key="frame" x="656.16666666666663" y="57.166666666666657" width="0.0" height="131"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <subviews>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="card44" translatesAutoresizingMaskIntoConstraints="NO" id="9bX-Su-j1v" userLabel="playerCard3">
+                                                        <rect key="frame" x="4" y="7" width="83" height="118"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="8"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </imageView>
+                                                </subviews>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="8"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.73010765850000003" green="1" blue="0.82933865520000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </view>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="7G7-eQ-60b">
+                                        <rect key="frame" x="0.0" y="274" width="696" height="100"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="XAe-Qw-nX2" userLabel="drawButtonStack">
+                                                <rect key="frame" x="0.0" y="0.0" width="696" height="45"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9hm-pF-yp4">
+                                                        <rect key="frame" x="0.0" y="0.0" width="328" height="45"/>
+                                                        <state key="normal" title="Button" image="bankDraw"/>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eXC-rQ-C21">
+                                                        <rect key="frame" x="368" y="0.0" width="328" height="45"/>
+                                                        <state key="normal" title="Button" image="playerDraw"/>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="74" translatesAutoresizingMaskIntoConstraints="NO" id="5C0-i9-Ff0" userLabel="winButtonStack" customClass="WinStack" customModule="Baccarat_Drawing_Rules_L" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="55" width="696" height="45"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NTl-3H-YMq">
+                                                        <rect key="frame" x="0.0" y="0.0" width="182.66666666666666" height="45"/>
+                                                        <state key="normal" title="Button" image="bankWins"/>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aEe-SV-YNM">
+                                                        <rect key="frame" x="256.66666666666669" y="0.0" width="182.66666666666669" height="45"/>
+                                                        <state key="normal" title="Button" image="Tie"/>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0qK-W8-2m6">
+                                                        <rect key="frame" x="513.33333333333337" y="0.0" width="182.66666666666663" height="45"/>
+                                                        <state key="normal" title="Button" image="playerWins"/>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="GDj-i3-O1y" firstAttribute="height" secondItem="Fwq-xi-8Sb" secondAttribute="height" multiplier="0.1771" id="79e-61-Oem"/>
+                                    <constraint firstItem="Oal-L3-jGU" firstAttribute="height" secondItem="Fwq-xi-8Sb" secondAttribute="height" multiplier="0.4782" id="De1-gh-Go5"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Fwq-xi-8Sb" secondAttribute="trailing" constant="20" id="1fx-Hp-iqW"/>
+                            <constraint firstAttribute="bottom" secondItem="Fwq-xi-8Sb" secondAttribute="bottom" constant="20" id="4ex-XJ-M73"/>
+                            <constraint firstItem="Fwq-xi-8Sb" firstAttribute="leading" secondItem="OCF-wN-oPH" secondAttribute="leading" constant="20" id="9Gi-El-ZYY"/>
+                            <constraint firstItem="WBT-iu-Nab" firstAttribute="bottom" secondItem="tOF-56-NVc" secondAttribute="bottom" id="Kbn-Vk-HKa"/>
+                            <constraint firstItem="Fwq-xi-8Sb" firstAttribute="top" secondItem="OCF-wN-oPH" secondAttribute="top" constant="20" id="LSJ-6w-Tlu"/>
+                            <constraint firstItem="WBT-iu-Nab" firstAttribute="trailing" secondItem="tOF-56-NVc" secondAttribute="trailing" id="Xld-9n-2Hr"/>
+                            <constraint firstItem="tOF-56-NVc" firstAttribute="top" secondItem="OCF-wN-oPH" secondAttribute="top" id="a5u-SF-4gq"/>
+                            <constraint firstItem="tOF-56-NVc" firstAttribute="leading" secondItem="OCF-wN-oPH" secondAttribute="leading" id="oeN-Qa-SK1"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="WBT-iu-Nab"/>
+                    </view>
+                    <connections>
+                        <outlet property="winStackView" destination="5C0-i9-Ff0" id="zzw-bu-CEt"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RXV-zg-CbP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="88.858695652173921" y="134.78260869565219"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Baccarat Blue background" width="2208" height="1242"/>
+        <image name="Line" width="8" height="544"/>
+        <image name="Tie" width="447" height="144"/>
+        <image name="bankDraw" width="717" height="154"/>
+        <image name="bankWins" width="447" height="144"/>
+        <image name="bankerTitle" width="319" height="70"/>
+        <image name="card10" width="216" height="307"/>
+        <image name="card27" width="210" height="309"/>
+        <image name="card35" width="210" height="316"/>
+        <image name="card44" width="210" height="311"/>
+        <image name="playerDraw" width="717" height="154"/>
+        <image name="playerTitle" width="280" height="89"/>
+        <image name="playerWins" width="447" height="144"/>
+    </resources>
+</document>

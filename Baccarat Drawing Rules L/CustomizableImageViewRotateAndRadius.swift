@@ -9,13 +9,12 @@
 import UIKit
 
 @IBDesignable class CustomizableImageViewRotateAndRadius: UIImageView {
-    
+
     @IBInspectable var cornerRadius: CGFloat = 0 {
-        
+
         didSet {
             layer.cornerRadius = cornerRadius
-            transform = CGAffineTransform(rotationAngle: .pi / 2);
+            transform = CGAffineTransform(rotationAngle: .pi / 2)
         }
     }
 }
-

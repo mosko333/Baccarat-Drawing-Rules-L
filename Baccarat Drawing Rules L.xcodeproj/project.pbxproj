@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7E4E7C4020823FE000D2EE65 /* BaccaratLayout.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E4E7C3F20823FE000D2EE65 /* BaccaratLayout.storyboard */; };
+		7E4E7C4220824B2300D2EE65 /* DrawButtonSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E4E7C4120824B2300D2EE65 /* DrawButtonSize.swift */; };
+		7E4E7C4420826B1C00D2EE65 /* WinButtonLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E4E7C4320826B1C00D2EE65 /* WinButtonLayout.swift */; };
 		7E71C5FE204ED97E006485D6 /* CustomizableImageViewRotateAndRadius.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E71C5FD204ED97E006485D6 /* CustomizableImageViewRotateAndRadius.swift */; };
 		7E72B4BC2068320B00423F11 /* GameLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E72B4BB2068320B00423F11 /* GameLogic.swift */; };
 		7E789946204B1CA9009B1899 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E789945204B1CA9009B1899 /* AppDelegate.swift */; };
@@ -14,10 +17,15 @@
 		7E78994B204B1CA9009B1899 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E789949204B1CA9009B1899 /* Main.storyboard */; };
 		7E789950204B1CA9009B1899 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E78994E204B1CA9009B1899 /* LaunchScreen.storyboard */; };
 		7E789958204B5196009B1899 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E789957204B5196009B1899 /* Images.xcassets */; };
+		7EEACB19208FC6DC008702AE /* WinStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EEACB18208FC6DC008702AE /* WinStack.swift */; };
+		7EEACB1C208FC84E008702AE /* WinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EEACB1B208FC84E008702AE /* WinViewController.swift */; };
 		7EFDA952204ECB67005E8E9A /* CustomizableImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EFDA951204ECB67005E8E9A /* CustomizableImageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7E4E7C3F20823FE000D2EE65 /* BaccaratLayout.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = BaccaratLayout.storyboard; sourceTree = "<group>"; };
+		7E4E7C4120824B2300D2EE65 /* DrawButtonSize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawButtonSize.swift; sourceTree = "<group>"; };
+		7E4E7C4320826B1C00D2EE65 /* WinButtonLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WinButtonLayout.swift; sourceTree = "<group>"; };
 		7E71C5FD204ED97E006485D6 /* CustomizableImageViewRotateAndRadius.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomizableImageViewRotateAndRadius.swift; sourceTree = "<group>"; };
 		7E72B4BB2068320B00423F11 /* GameLogic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameLogic.swift; sourceTree = "<group>"; };
 		7E789942204B1CA9009B1899 /* Baccarat Drawing Rules L.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Baccarat Drawing Rules L.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -27,6 +35,8 @@
 		7E78994F204B1CA9009B1899 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7E789951204B1CA9009B1899 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7E789957204B5196009B1899 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		7EEACB18208FC6DC008702AE /* WinStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WinStack.swift; sourceTree = "<group>"; };
+		7EEACB1B208FC84E008702AE /* WinViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WinViewController.swift; sourceTree = "<group>"; };
 		7EFDA951204ECB67005E8E9A /* CustomizableImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomizableImageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -66,11 +76,24 @@
 				7E72B4BB2068320B00423F11 /* GameLogic.swift */,
 				7E71C5FD204ED97E006485D6 /* CustomizableImageViewRotateAndRadius.swift */,
 				7EFDA951204ECB67005E8E9A /* CustomizableImageView.swift */,
+				7E4E7C4320826B1C00D2EE65 /* WinButtonLayout.swift */,
+				7E4E7C4120824B2300D2EE65 /* DrawButtonSize.swift */,
+				7EEACB1A208FC6EE008702AE /* Win */,
 				7E78994E204B1CA9009B1899 /* LaunchScreen.storyboard */,
 				7E789951204B1CA9009B1899 /* Info.plist */,
 				7E789957204B5196009B1899 /* Images.xcassets */,
 			);
 			path = "Baccarat Drawing Rules L";
+			sourceTree = "<group>";
+		};
+		7EEACB1A208FC6EE008702AE /* Win */ = {
+			isa = PBXGroup;
+			children = (
+				7E4E7C3F20823FE000D2EE65 /* BaccaratLayout.storyboard */,
+				7EEACB18208FC6DC008702AE /* WinStack.swift */,
+				7EEACB1B208FC84E008702AE /* WinViewController.swift */,
+			);
+			path = Win;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -100,7 +123,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0920;
-				LastUpgradeCheck = 0920;
+				LastUpgradeCheck = 0940;
 				ORGANIZATIONNAME = "Adam Moskovich";
 				TargetAttributes = {
 					7E789941204B1CA9009B1899 = {
@@ -135,6 +158,7 @@
 				7E789958204B5196009B1899 /* Images.xcassets in Resources */,
 				7E789950204B1CA9009B1899 /* LaunchScreen.storyboard in Resources */,
 				7E78994B204B1CA9009B1899 /* Main.storyboard in Resources */,
+				7E4E7C4020823FE000D2EE65 /* BaccaratLayout.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -146,8 +170,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				7EFDA952204ECB67005E8E9A /* CustomizableImageView.swift in Sources */,
+				7E4E7C4420826B1C00D2EE65 /* WinButtonLayout.swift in Sources */,
 				7E72B4BC2068320B00423F11 /* GameLogic.swift in Sources */,
+				7E4E7C4220824B2300D2EE65 /* DrawButtonSize.swift in Sources */,
 				7E789948204B1CA9009B1899 /* ViewController.swift in Sources */,
+				7EEACB19208FC6DC008702AE /* WinStack.swift in Sources */,
+				7EEACB1C208FC84E008702AE /* WinViewController.swift in Sources */,
 				7E789946204B1CA9009B1899 /* AppDelegate.swift in Sources */,
 				7E71C5FE204ED97E006485D6 /* CustomizableImageViewRotateAndRadius.swift in Sources */,
 			);
@@ -189,6 +217,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -196,6 +225,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -246,6 +276,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -253,6 +284,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;

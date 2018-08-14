@@ -9,49 +9,47 @@
 import UIKit
 
 class ViewController: UIViewController {
-    
-    //Mark: - Link Model
-    
+
+    // MARK: - Link Model
+
     /// contains the logic for the Baccarat game
     var gameLogic = GameLogic()
-    
-    
-    //MARK: - IBOutlet Declarations
-    
+
+    // MARK: - IBOutlet Declarations
+
     @IBOutlet private weak var bank1ViewBackground: CustomizableImageView!
     @IBOutlet private weak var bank2ViewBackground: CustomizableImageView!
     @IBOutlet private weak var bank3ViewBackground: CustomizableImageView!
     @IBOutlet private weak var player1ViewBackground: CustomizableImageView!
     @IBOutlet private weak var player2ViewBackground: CustomizableImageView!
     @IBOutlet private weak var player3ViewBackground: CustomizableImageView!
-    
+
     @IBOutlet private weak var bankCard1: UIImageView!
     @IBOutlet private weak var bankCard2: UIImageView!
     @IBOutlet private weak var bankCard3: UIImageView!
     @IBOutlet private weak var playerCard1: UIImageView!
     @IBOutlet private weak var playerCard2: UIImageView!
     @IBOutlet private weak var playerCard3: UIImageView!
-    
+
     @IBOutlet private weak var messageBox: UIButton!
-    
-    //MARK: - viewDidLoad
-    
+
+    // MARK: - viewDidLoad
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
         resetHand()
     }
-    
+
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
-    
-    //MARK: - Setup Hand Function
-    
-    
+
+    // MARK: - Setup Hand Function
+
     /// Resets Hand, Fisrt two cards images and values are set to random numbers, the 3rd cards are set to 0
     private func resetHand() {
-        
+
         messageBox.isHidden = true
         bank3ViewBackground.isHidden = true
         player3ViewBackground.isHidden = true
@@ -79,22 +77,21 @@ class ViewController: UIViewController {
         gameLogic.playerCard2Value = cardProperties.cardNumericValue
         print("playerCard2Value is set to \(gameLogic.playerCard2Value)")
         }
-    
+
     /// Genrates a random image name and corresponding card value
     ///
     /// - Returns: Image name for card and it's value (0-9)
     private func setCardFace() -> (cardName: String, cardNumericValue: Int) {
-        
+
         var cardName = "card"
         let randomCardNumber = Int(arc4random_uniform(52) + 1)
         let cardNumericValue = gameLogic.computeCardValue(cardNumber: randomCardNumber)
         cardName += String(randomCardNumber)
-        
+
         return (cardName, cardNumericValue)
     }
 
-    
-    //MARK: - Checking Answer
+    // MARK: - Checking Answer
 
     /// Checks if the hand is 'Natual'
     /// - If Yes the it changes to message box to the 'Natual' message
@@ -108,7 +105,6 @@ class ViewController: UIViewController {
             return false
     }
 
-    
     /// Checks if the player should take a 3rd card
     ///
     /// - Returns: returns 'true' for a 3rd card. 'false' for no 3rd card
@@ -124,29 +120,25 @@ class ViewController: UIViewController {
     ///
     /// - Returns: returns 'true' for a 3rd card. 'false' for no 3rd card
     private func checkAnswerForBankDraw() -> Bool {
-        let answerCode = gameLogic.isBankDrawCorrect(isPlayers3rdViewHidden: player3ViewBackground.isHidden)
+        let answerCode: messageType = gameLogic.isBankDrawCorrect(isPlayers3rdViewHidden: player3ViewBackground.isHidden)
         switch answerCode {
-        case 0:
+        case .correct:
             return true
-        case 1:
+        case .playerDrawFirst:
             messageBox.setImage(#imageLiteral(resourceName: "messagePlayerDrawsFirst"), for: .normal)
             return false
-        case 2:
+        case .playerStand67:
             messageBox.setImage(#imageLiteral(resourceName: "messageBankStandsAgainced6or7"), for: .normal)
             return false
-        case 3:
+        case .bankRules:
             messageBox.setImage(#imageLiteral(resourceName: "messageBankDrawingRules"), for: .normal)
             return false
-        case 666:
-            messageBox.setImage(#imageLiteral(resourceName: "messageError"), for: .normal)
-            return false
-        default:
-            print("probem with value returned to checkAnswerForBankDraw() in main VC")
+        case .error:
             messageBox.setImage(#imageLiteral(resourceName: "messageError"), for: .normal)
             return false
         }
     }
-    
+
         /// Checks if the right number of cards have been drawn to determin the winner
         ///
         /// - Returns: 'true' if the card count is correct
@@ -158,23 +150,21 @@ class ViewController: UIViewController {
             return false
         }
 
-    
-    //MARK: - UIButtons
-    
+    // MARK: - UIButtons
+
     /// Input for the 'Draw' Buttons
     ///
     /// - Parameter sender:
     /// - 0 - Bank Draw
     /// - 1 - Player Draw
     @IBAction private func drawCard(_ sender: UIButton) {
-        if messageBox.isHidden{
+        if messageBox.isHidden {
             if checkForNatruals() {
                 messageBox.isHidden = false
-            }
-            else {
+            } else {
                 let cardProperties = setCardFace()
                 switch (sender.tag) {
-                    
+
                 // Bank Draw
                 case 0:
                     if bank3ViewBackground.isHidden && checkAnswerForBankDraw() {
@@ -182,12 +172,10 @@ class ViewController: UIViewController {
                         gameLogic.bankCard3Value = cardProperties.cardNumericValue
                         bank3ViewBackground.isHidden = false
                         print("Bank draws a \(cardProperties.cardNumericValue)")
-                    }
-                    else if bank3ViewBackground.isHidden && !checkAnswerForBankDraw() {
+                    } else if bank3ViewBackground.isHidden && !checkAnswerForBankDraw() {
                         messageBox.isHidden = false
                         print("Bank should not draw a card")
-                    }
-                    else {
+                    } else {
                         print("Bank has already drawn a card")
                     }
 
@@ -198,12 +186,10 @@ class ViewController: UIViewController {
                         gameLogic.playerCard3Value = cardProperties.cardNumericValue
                         player3ViewBackground.isHidden = false
                         print("Player draws a \(cardProperties.cardNumericValue)")
-                    }
-                    else if player3ViewBackground.isHidden == true && checkAnswerForPlayerDraw() == false {
+                    } else if player3ViewBackground.isHidden == true && checkAnswerForPlayerDraw() == false {
                         messageBox.isHidden = false
                         print("Player should not draw a card")
-                    }
-                    else {
+                    } else {
                         print("Player has already drawn a card")
                     }
                 default:
@@ -212,8 +198,7 @@ class ViewController: UIViewController {
             }
         }
     }
-    
-    
+
     /// Input for which hand wins
     ///
     /// - Parameter sender:
@@ -228,8 +213,7 @@ class ViewController: UIViewController {
                     if gameLogic.bankTotalHand > gameLogic.playerTotalHand {
                         print("Bank Wins")
                         resetHand()
-                    }
-                    else {
+                    } else {
                         messageBox.setImage(#imageLiteral(resourceName: "messageWrongWinner"), for: .normal)
                         messageBox.isHidden = false
                     }
@@ -237,8 +221,7 @@ class ViewController: UIViewController {
                     if gameLogic.bankTotalHand == gameLogic.playerTotalHand {
                         print("Tie Wins")
                         resetHand()
-                    }
-                    else {
+                    } else {
                         messageBox.setImage(#imageLiteral(resourceName: "messageWrongWinner"), for: .normal)
                         messageBox.isHidden = false
                     }
@@ -246,24 +229,27 @@ class ViewController: UIViewController {
                     if gameLogic.playerTotalHand > gameLogic.bankTotalHand {
                         print("Player Wins")
                         resetHand()
-                    }
-                    else {
+                    } else {
                         messageBox.setImage(#imageLiteral(resourceName: "messageWrongWinner"), for: .normal)
                         messageBox.isHidden = false
                     }
                 default:
                     print("Something went wrong in the whoWins UIButton function")
                 }
-            }
-            else {
+            } else {
                 messageBox.setImage(#imageLiteral(resourceName: "messageDrawMoreCards"), for: .normal)
                 messageBox.isHidden = false
                 print("wrong Number of cards")
             }
         }
     }
-    
-    
+
+    override func touchesBegan(_ touches: Set<UITouch>,
+                               with event: UIEvent?) {
+           messageBox.isHidden = true
+
+    }
+
     /// Button that dismisses the message
     ///
     /// - Parameter sender: The user hits the button to return to the game after a message is made visible
@@ -271,7 +257,3 @@ class ViewController: UIViewController {
         messageBox.isHidden = true
     }
 }
-
-
-
-
