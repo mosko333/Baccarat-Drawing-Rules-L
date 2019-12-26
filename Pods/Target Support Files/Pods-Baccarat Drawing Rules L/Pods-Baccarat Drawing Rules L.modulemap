@@ -1,0 +1,6 @@
+framework module Pods_Baccarat_Drawing_Rules_L {
+  umbrella header "Pods-Baccarat Drawing Rules L-umbrella.h"
+
+  export *
+  module * { export * }
+}
