@@ -8,6 +8,9 @@
 
 import UIKit
 
+// swiftlint:disable all
+// Since this is apples default configuration, it seems safe to disable the linter on this file
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 

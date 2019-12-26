@@ -8,7 +8,7 @@
 
 import Foundation
 
-enum messageType {
+enum MessageType {
     case correct
     case playerDrawFirst
     case playerStand67
@@ -94,21 +94,21 @@ class GameLogic {
     /// - playerStand67
     /// - bankRules
     /// - error
-    func isBankDrawCorrect(isPlayers3rdViewHidden players3rdViewIsHidden: Bool) -> messageType {
+    func isBankDrawCorrect(isPlayers3rdViewHidden players3rdViewIsHidden: Bool) -> MessageType {
         if players3rdViewIsHidden && (playerFirstTwoCardTotal != 6 && playerFirstTwoCardTotal != 7) {
             if playerFirstTwoCardTotal <= 5 {
                 print("Fail - Player should draw, they have \(playerFirstTwoCardTotal)")
-                return messageType.playerDrawFirst
+                return MessageType.playerDrawFirst
             } else {
                 print("Player total is not 6 - 7 or 0 - 5, somthing is wrong")
-                return messageType.error
+                return MessageType.error
             }
         } else if players3rdViewIsHidden && (playerFirstTwoCardTotal == 6 || playerFirstTwoCardTotal == 7) {
             if bankFirstTwoCardTotal <= 5 {
-                return messageType.correct
+                return MessageType.correct
             } else {
                 print("Fail - When the player stands with a 6 - 7, the bank only draws with 0 - 5")
-                return messageType.playerStand67
+                return MessageType.playerStand67
             }
         } else {
 
@@ -116,48 +116,48 @@ class GameLogic {
 
             case 0...2 :
                 print("Bank draws, 0 - 2")
-                return messageType.correct
+                return MessageType.correct
             case 3 :
                 if playerCard3Value != 8 {
                     print("Back draws, it has 3 and the player is has not drawn an 8")
-                    return messageType.correct
+                    return MessageType.correct
                 } else {
                     print("Fail - Bank doesn't draw since it has a 3 and the player had an 8")
-                    return messageType.bankRules
+                    return MessageType.bankRules
                 }
             case 4 :
                 let cardValueArray = [2, 3, 4, 5, 6, 7]
                 if cardValueArray.contains(playerCard3Value) {
                     print("Bank draws because it has 4 and player draw a 2-7")
-                    return messageType.correct
+                    return MessageType.correct
                 } else {
                     print("Fail - Bank doesn't draw since it has a 4 and the player didn't draw 2-7")
-                    return messageType.bankRules
+                    return MessageType.bankRules
                 }
             case 5 :
                 let cardValueArray = [4, 5, 6, 7]
                 if cardValueArray.contains(playerCard3Value) {
                     print("Bank draws because it has 5 and player draw a 4-7")
-                    return messageType.correct
+                    return MessageType.correct
                 } else {
                     print("Fail - Bank doesn't draw since it has a 5 and the player didn't draw 4-7")
-                    return messageType.bankRules
+                    return MessageType.bankRules
                 }
             case 6 :
                 let cardValueArray = [6, 7]
                 if cardValueArray.contains(playerCard3Value) {
                     print("Bank draws because it has 6 and player draw a 6-7")
-                    return messageType.correct
+                    return MessageType.correct
                 } else {
                     print("Fail - Bank doesn't draw since it has a 6 and the player didn't draw 6-7")
-                    return messageType.bankRules
+                    return MessageType.bankRules
                 }
             case 7 :
                 print("Fail - Bank doesn't draw on 7")
-                return messageType.bankRules
+                return MessageType.bankRules
             default :
                 print("Bank third card rule didn't work")
-                return messageType.error
+                return MessageType.error
             }
 
         }
@@ -179,7 +179,7 @@ class GameLogic {
                 if  !banks3rdViewisHidden {
                     print("Player card is hidden !isPlayerDrawCorrect and bank 3rd card is shown")
                     return true
-                } else if isBankDrawCorrect(isPlayers3rdViewHidden: players3rdViewIsHidden) != messageType.correct {
+                } else if isBankDrawCorrect(isPlayers3rdViewHidden: players3rdViewIsHidden) != MessageType.correct {
                     print("Player card hidden and Bank card is hidden and check agrees")
                     return true
                 } else {
@@ -190,7 +190,7 @@ class GameLogic {
                 return false
             }
         } else {
-            if isBankDrawCorrect(isPlayers3rdViewHidden: players3rdViewIsHidden) != messageType.correct {
+            if isBankDrawCorrect(isPlayers3rdViewHidden: players3rdViewIsHidden) != MessageType.correct {
                 return true
             } else {
                 return false

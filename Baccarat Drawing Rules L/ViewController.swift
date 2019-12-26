@@ -120,7 +120,7 @@ class ViewController: UIViewController {
     ///
     /// - Returns: returns 'true' for a 3rd card. 'false' for no 3rd card
     private func checkAnswerForBankDraw() -> Bool {
-        let answerCode: messageType = gameLogic.isBankDrawCorrect(isPlayers3rdViewHidden: player3ViewBackground.isHidden)
+        let answerCode: MessageType = gameLogic.isBankDrawCorrect(isPlayers3rdViewHidden: player3ViewBackground.isHidden)
         switch answerCode {
         case .correct:
             return true
