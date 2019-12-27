@@ -15,6 +15,7 @@
 			dependencies = (
 			);
 			name = SwiftLint;
+			productName = SwiftLint;
 		};
 /* End PBXAggregateTarget section */
 
@@ -44,9 +45,9 @@
 		89F85ACF3D78B39506B75103B4694B36 /* SwiftLint.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftLint.xcconfig; sourceTree = "<group>"; };
 		8E591CCEB29B30F1CFC124B086F1A974 /* Pods-Baccarat Drawing Rules L-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Baccarat Drawing Rules L-acknowledgements.plist"; sourceTree = "<group>"; };
 		976ABFA835DE4CE66D7B0FC96E4798D1 /* Pods-Baccarat Drawing Rules L-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Baccarat Drawing Rules L-acknowledgements.markdown"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A60B1C23B4F62F24A043E14CD5EF4E92 /* Pods-Baccarat Drawing Rules L-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Baccarat Drawing Rules L-Info.plist"; sourceTree = "<group>"; };
-		BDBB1A2D02F99D9F3D537CCEE2705C3E /* Pods_Baccarat_Drawing_Rules_L.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Baccarat_Drawing_Rules_L.framework; path = "Pods-Baccarat Drawing Rules L.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BDBB1A2D02F99D9F3D537CCEE2705C3E /* Pods_Baccarat_Drawing_Rules_L.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Baccarat_Drawing_Rules_L.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,7 +99,6 @@
 			children = (
 				EEA599FE5C15138FF0981CCFB01E55AA /* Support Files */,
 			);
-			name = SwiftLint;
 			path = SwiftLint;
 			sourceTree = "<group>";
 		};
@@ -186,7 +186,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1100;
-				LastUpgradeCheck = 1100;
+				LastUpgradeCheck = 1130;
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 8.0";
@@ -241,7 +241,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 89F85ACF3D78B39506B75103B4694B36 /* SwiftLint.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -304,8 +303,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
@@ -316,7 +314,6 @@
 			baseConfigurationReference = 695DEE2FE7B77B9C1C4831C2487181E3 /* Pods-Baccarat Drawing Rules L.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -352,7 +349,6 @@
 			baseConfigurationReference = 272E5466F0593651DAB33BB950EEE51C /* Pods-Baccarat Drawing Rules L.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -450,7 +446,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 89F85ACF3D78B39506B75103B4694B36 /* SwiftLint.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
