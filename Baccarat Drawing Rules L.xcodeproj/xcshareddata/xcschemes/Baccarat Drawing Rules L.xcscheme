@@ -37,6 +37,36 @@
          </BuildableReference>
       </MacroExpansion>
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "935F7A7323B5A25D0026F320"
+               BuildableName = "Baccarat Drawing Rules LTests.xctest"
+               BlueprintName = "Baccarat Drawing Rules LTests"
+               ReferencedContainer = "container:Baccarat Drawing Rules L.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "935F7A8123B5A2910026F320"
+               BuildableName = "UnitTests Bacc.xctest"
+               BlueprintName = "UnitTests Bacc"
+               ReferencedContainer = "container:Baccarat Drawing Rules L.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "935F7A8F23B5A2A20026F320"
+               BuildableName = "UITests Bacc.xctest"
+               BlueprintName = "UITests Bacc"
+               ReferencedContainer = "container:Baccarat Drawing Rules L.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
    </TestAction>
    <LaunchAction

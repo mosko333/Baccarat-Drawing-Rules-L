@@ -21,7 +21,26 @@
 		7EEACB19208FC6DC008702AE /* WinStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EEACB18208FC6DC008702AE /* WinStack.swift */; };
 		7EEACB1C208FC84E008702AE /* WinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EEACB1B208FC84E008702AE /* WinViewController.swift */; };
 		7EFDA952204ECB67005E8E9A /* CustomizableImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EFDA951204ECB67005E8E9A /* CustomizableImageView.swift */; };
+		935F7A8523B5A2910026F320 /* UnitTests_Bacc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935F7A8423B5A2910026F320 /* UnitTests_Bacc.swift */; };
+		935F7A9323B5A2A20026F320 /* UITests_Bacc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935F7A9223B5A2A20026F320 /* UITests_Bacc.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		935F7A8723B5A2910026F320 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7E78993A204B1CA9009B1899 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7E789941204B1CA9009B1899;
+			remoteInfo = "Baccarat Drawing Rules L";
+		};
+		935F7A9523B5A2A20026F320 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7E78993A204B1CA9009B1899 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7E789941204B1CA9009B1899;
+			remoteInfo = "Baccarat Drawing Rules L";
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		5EA02DFEDFB455808D406A65 /* Pods_Baccarat_Drawing_Rules_L.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Baccarat_Drawing_Rules_L.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -41,6 +60,12 @@
 		7EEACB18208FC6DC008702AE /* WinStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WinStack.swift; sourceTree = "<group>"; };
 		7EEACB1B208FC84E008702AE /* WinViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WinViewController.swift; sourceTree = "<group>"; };
 		7EFDA951204ECB67005E8E9A /* CustomizableImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomizableImageView.swift; sourceTree = "<group>"; };
+		935F7A8223B5A2910026F320 /* UnitTests Bacc.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "UnitTests Bacc.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		935F7A8423B5A2910026F320 /* UnitTests_Bacc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnitTests_Bacc.swift; sourceTree = "<group>"; };
+		935F7A8623B5A2910026F320 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		935F7A9023B5A2A20026F320 /* UITests Bacc.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "UITests Bacc.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		935F7A9223B5A2A20026F320 /* UITests_Bacc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITests_Bacc.swift; sourceTree = "<group>"; };
+		935F7A9423B5A2A20026F320 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E68D47C50473A858CEA6FF24 /* Pods-Baccarat Drawing Rules L.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Baccarat Drawing Rules L.release.xcconfig"; path = "Target Support Files/Pods-Baccarat Drawing Rules L/Pods-Baccarat Drawing Rules L.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -53,6 +78,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		935F7A7F23B5A2910026F320 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		935F7A8D23B5A2A20026F320 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -60,6 +99,8 @@
 			isa = PBXGroup;
 			children = (
 				7E789944204B1CA9009B1899 /* Baccarat Drawing Rules L */,
+				935F7A8323B5A2910026F320 /* UnitTests Bacc */,
+				935F7A9123B5A2A20026F320 /* UITests Bacc */,
 				7E789943204B1CA9009B1899 /* Products */,
 				8477176C0BA626A45926BF14 /* Pods */,
 				C3FC840B0DB85472A9FAFF91 /* Frameworks */,
@@ -70,6 +111,8 @@
 			isa = PBXGroup;
 			children = (
 				7E789942204B1CA9009B1899 /* Baccarat Drawing Rules L.app */,
+				935F7A8223B5A2910026F320 /* UnitTests Bacc.xctest */,
+				935F7A9023B5A2A20026F320 /* UITests Bacc.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -112,6 +155,24 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		935F7A8323B5A2910026F320 /* UnitTests Bacc */ = {
+			isa = PBXGroup;
+			children = (
+				935F7A8423B5A2910026F320 /* UnitTests_Bacc.swift */,
+				935F7A8623B5A2910026F320 /* Info.plist */,
+			);
+			path = "UnitTests Bacc";
+			sourceTree = "<group>";
+		};
+		935F7A9123B5A2A20026F320 /* UITests Bacc */ = {
+			isa = PBXGroup;
+			children = (
+				935F7A9223B5A2A20026F320 /* UITests_Bacc.swift */,
+				935F7A9423B5A2A20026F320 /* Info.plist */,
+			);
+			path = "UITests Bacc";
+			sourceTree = "<group>";
+		};
 		C3FC840B0DB85472A9FAFF91 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -142,13 +203,49 @@
 			productReference = 7E789942204B1CA9009B1899 /* Baccarat Drawing Rules L.app */;
 			productType = "com.apple.product-type.application";
 		};
+		935F7A8123B5A2910026F320 /* UnitTests Bacc */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 935F7A8923B5A2910026F320 /* Build configuration list for PBXNativeTarget "UnitTests Bacc" */;
+			buildPhases = (
+				935F7A7E23B5A2910026F320 /* Sources */,
+				935F7A7F23B5A2910026F320 /* Frameworks */,
+				935F7A8023B5A2910026F320 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				935F7A8823B5A2910026F320 /* PBXTargetDependency */,
+			);
+			name = "UnitTests Bacc";
+			productName = "UnitTests Bacc";
+			productReference = 935F7A8223B5A2910026F320 /* UnitTests Bacc.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		935F7A8F23B5A2A20026F320 /* UITests Bacc */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 935F7A9723B5A2A20026F320 /* Build configuration list for PBXNativeTarget "UITests Bacc" */;
+			buildPhases = (
+				935F7A8C23B5A2A20026F320 /* Sources */,
+				935F7A8D23B5A2A20026F320 /* Frameworks */,
+				935F7A8E23B5A2A20026F320 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				935F7A9623B5A2A20026F320 /* PBXTargetDependency */,
+			);
+			name = "UITests Bacc";
+			productName = "UITests Bacc";
+			productReference = 935F7A9023B5A2A20026F320 /* UITests Bacc.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		7E78993A204B1CA9009B1899 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0920;
+				LastSwiftUpdateCheck = 1130;
 				LastUpgradeCheck = 0940;
 				ORGANIZATIONNAME = "Adam Moskovich";
 				TargetAttributes = {
@@ -156,6 +253,16 @@
 						CreatedOnToolsVersion = 9.2;
 						LastSwiftMigration = 1130;
 						ProvisioningStyle = Automatic;
+					};
+					935F7A8123B5A2910026F320 = {
+						CreatedOnToolsVersion = 11.3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 7E789941204B1CA9009B1899;
+					};
+					935F7A8F23B5A2A20026F320 = {
+						CreatedOnToolsVersion = 11.3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 7E789941204B1CA9009B1899;
 					};
 				};
 			};
@@ -173,6 +280,8 @@
 			projectRoot = "";
 			targets = (
 				7E789941204B1CA9009B1899 /* Baccarat Drawing Rules L */,
+				935F7A8123B5A2910026F320 /* UnitTests Bacc */,
+				935F7A8F23B5A2A20026F320 /* UITests Bacc */,
 			);
 		};
 /* End PBXProject section */
@@ -186,6 +295,20 @@
 				7E789950204B1CA9009B1899 /* LaunchScreen.storyboard in Resources */,
 				7E78994B204B1CA9009B1899 /* Main.storyboard in Resources */,
 				7E4E7C4020823FE000D2EE65 /* BaccaratLayout.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		935F7A8023B5A2910026F320 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		935F7A8E23B5A2A20026F320 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,7 +374,36 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		935F7A7E23B5A2910026F320 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				935F7A8523B5A2910026F320 /* UnitTests_Bacc.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		935F7A8C23B5A2A20026F320 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				935F7A9323B5A2A20026F320 /* UITests_Bacc.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		935F7A8823B5A2910026F320 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7E789941204B1CA9009B1899 /* Baccarat Drawing Rules L */;
+			targetProxy = 935F7A8723B5A2910026F320 /* PBXContainerItemProxy */;
+		};
+		935F7A9623B5A2A20026F320 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7E789941204B1CA9009B1899 /* Baccarat Drawing Rules L */;
+			targetProxy = 935F7A9523B5A2A20026F320 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		7E789949204B1CA9009B1899 /* Main.storyboard */ = {
@@ -416,6 +568,82 @@
 			};
 			name = Release;
 		};
+		935F7A8A23B5A2910026F320 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QNR668FAMZ;
+				INFOPLIST_FILE = "UnitTests Bacc/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.salesrabbit.UnitTests-Bacc";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Baccarat Drawing Rules L.app/Baccarat Drawing Rules L";
+			};
+			name = Debug;
+		};
+		935F7A8B23B5A2910026F320 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QNR668FAMZ;
+				INFOPLIST_FILE = "UnitTests Bacc/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.salesrabbit.UnitTests-Bacc";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Baccarat Drawing Rules L.app/Baccarat Drawing Rules L";
+			};
+			name = Release;
+		};
+		935F7A9823B5A2A20026F320 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QNR668FAMZ;
+				INFOPLIST_FILE = "UITests Bacc/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.salesrabbit.UITests-Bacc";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Baccarat Drawing Rules L";
+			};
+			name = Debug;
+		};
+		935F7A9923B5A2A20026F320 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QNR668FAMZ;
+				INFOPLIST_FILE = "UITests Bacc/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.salesrabbit.UITests-Bacc";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Baccarat Drawing Rules L";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -433,6 +661,24 @@
 			buildConfigurations = (
 				7E789955204B1CA9009B1899 /* Debug */,
 				7E789956204B1CA9009B1899 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		935F7A8923B5A2910026F320 /* Build configuration list for PBXNativeTarget "UnitTests Bacc" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				935F7A8A23B5A2910026F320 /* Debug */,
+				935F7A8B23B5A2910026F320 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		935F7A9723B5A2A20026F320 /* Build configuration list for PBXNativeTarget "UITests Bacc" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				935F7A9823B5A2A20026F320 /* Debug */,
+				935F7A9923B5A2A20026F320 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
