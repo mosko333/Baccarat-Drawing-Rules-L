@@ -120,7 +120,7 @@ class ViewController: UIViewController {
     ///
     /// - Returns: returns 'true' for a 3rd card. 'false' for no 3rd card
     private func checkAnswerForBankDraw() -> Bool {
-        let answerCode: MessageType = gameLogic.isBankDrawCorrect(isPlayers3rdViewHidden: player3ViewBackground.isHidden)
+        let answerCode = gameLogic.isBankDrawCorrect(isPlayers3rdViewHidden: player3ViewBackground.isHidden)
         switch answerCode {
         case .correct:
             return true
@@ -143,7 +143,8 @@ class ViewController: UIViewController {
         ///
         /// - Returns: 'true' if the card count is correct
         private func checkWinAnswer() -> Bool {
-            if gameLogic.checkDraw(isBanks3rdViewHidden: bank3ViewBackground.isHidden, isPlayers3rdViewHidden: player3ViewBackground.isHidden) {
+            if gameLogic.checkDraw(isBanks3rdViewHidden: bank3ViewBackground.isHidden,
+                                   isPlayers3rdViewHidden: player3ViewBackground.isHidden) {
                 return true
             }
             messageBox.setImage(#imageLiteral(resourceName: "messageDrawMoreCards"), for: .normal)
@@ -163,7 +164,7 @@ class ViewController: UIViewController {
                 messageBox.isHidden = false
             } else {
                 let cardProperties = setCardFace()
-                switch (sender.tag) {
+                switch sender.tag {
 
                 // Bank Draw
                 case 0:
@@ -208,7 +209,7 @@ class ViewController: UIViewController {
     @IBAction private func whoWins(_ sender: UIButton) {
         if messageBox.isHidden {
             if checkWinAnswer() || checkForNatruals() {
-                switch (sender.tag) {
+                switch sender.tag {
                 case 0:
                     if gameLogic.bankTotalHand > gameLogic.playerTotalHand {
                         print("Bank Wins")

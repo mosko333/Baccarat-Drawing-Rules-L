@@ -112,7 +112,7 @@ class GameLogic {
             }
         } else {
 
-            switch (bankFirstTwoCardTotal) {
+            switch bankFirstTwoCardTotal {
 
             case 0...2 :
                 print("Bank draws, 0 - 2")
