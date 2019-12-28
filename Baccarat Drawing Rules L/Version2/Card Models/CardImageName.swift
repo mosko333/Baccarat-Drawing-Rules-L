@@ -15,8 +15,8 @@ struct CardImageName {
     /// Can be used with `UIImage(named: )`
     /// - Parameter card: An instance of the Card model
     static func of(_ card: Card) -> String {
-        guard let imageNameByFaceName = imageNameBySuitAndCardFaceName[card.suit],
-            let imageName = imageNameByFaceName[card.faceName] else {
+        guard let imageNameByFaceName = imageNameBySuitAndCardValueName[card.suit],
+            let imageName = imageNameByFaceName[card.valueName] else {
                 assert(false, "The cards was not found in the dictionary")
                 return ""
         }
@@ -26,7 +26,7 @@ struct CardImageName {
     // MARK: - Data
 
     /// dictionary of all the image names of the cards
-    static private let imageNameBySuitAndCardFaceName: [CardSuit: [CardValueName: String]] =
+    static private let imageNameBySuitAndCardValueName: [CardSuit: [CardValueName: String]] =
         [.heart: [
             .ace: "card1",
             .two: "card2",

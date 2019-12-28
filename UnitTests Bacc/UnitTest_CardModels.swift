@@ -19,6 +19,32 @@ class UnitTest_CardModels: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
+    // MARK: - test Card
+
+    // Check that all cards have imageNames
+    // Different than the test bellow because it checks the static method
+    // From the CardImageName Model
+    func test_CardImageNameFromImageName() {
+        for suit in CardSuit.allCases {
+            for valueName in CardValueName.allCases {
+                let card = Card(suit: suit, valueName: valueName)
+                let imageName = CardImageName.of(card)
+                XCTAssert(!imageName.isEmpty, "The is no imageName for this card")
+            }
+        }
+    }
+
+    // Check that all cards have imageNames
+    // Different than the test above because it checks the method on the card itself
+    func test_CardImageNameFromCard() {
+        for suit in CardSuit.allCases {
+            for valueName in CardValueName.allCases {
+                let imageName = Card(suit: suit, valueName: valueName).imageName()
+                XCTAssert(!imageName.isEmpty, "The is no imageName for this card")
+            }
+        }
+    }
+
     // MARK: - test CardSuit
 
     func test_CardSuitRandom() {

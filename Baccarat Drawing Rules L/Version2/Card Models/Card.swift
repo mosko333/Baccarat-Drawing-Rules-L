@@ -8,8 +8,8 @@
 
 struct Card {
 
-    let faceName: CardValueName
     let suit: CardSuit
+    let valueName: CardValueName
 
     /// Returns the name of the image
     func imageName() -> String {
