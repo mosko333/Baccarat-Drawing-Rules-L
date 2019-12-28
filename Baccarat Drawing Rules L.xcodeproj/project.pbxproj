@@ -21,7 +21,7 @@
 		7EEACB19208FC6DC008702AE /* WinStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EEACB18208FC6DC008702AE /* WinStack.swift */; };
 		7EEACB1C208FC84E008702AE /* WinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EEACB1B208FC84E008702AE /* WinViewController.swift */; };
 		7EFDA952204ECB67005E8E9A /* CustomizableImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EFDA951204ECB67005E8E9A /* CustomizableImageView.swift */; };
-		935F7A8523B5A2910026F320 /* UnitTests_Bacc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935F7A8423B5A2910026F320 /* UnitTests_Bacc.swift */; };
+		935F7A8523B5A2910026F320 /* UnitTests_GameLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935F7A8423B5A2910026F320 /* UnitTests_GameLogic.swift */; };
 		935F7A9323B5A2A20026F320 /* UITests_Bacc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935F7A9223B5A2A20026F320 /* UITests_Bacc.swift */; };
 /* End PBXBuildFile section */
 
@@ -61,7 +61,7 @@
 		7EEACB1B208FC84E008702AE /* WinViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WinViewController.swift; sourceTree = "<group>"; };
 		7EFDA951204ECB67005E8E9A /* CustomizableImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomizableImageView.swift; sourceTree = "<group>"; };
 		935F7A8223B5A2910026F320 /* UnitTests Bacc.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "UnitTests Bacc.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		935F7A8423B5A2910026F320 /* UnitTests_Bacc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnitTests_Bacc.swift; sourceTree = "<group>"; };
+		935F7A8423B5A2910026F320 /* UnitTests_GameLogic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnitTests_GameLogic.swift; sourceTree = "<group>"; };
 		935F7A8623B5A2910026F320 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		935F7A9023B5A2A20026F320 /* UITests Bacc.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "UITests Bacc.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		935F7A9223B5A2A20026F320 /* UITests_Bacc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITests_Bacc.swift; sourceTree = "<group>"; };
@@ -158,7 +158,7 @@
 		935F7A8323B5A2910026F320 /* UnitTests Bacc */ = {
 			isa = PBXGroup;
 			children = (
-				935F7A8423B5A2910026F320 /* UnitTests_Bacc.swift */,
+				935F7A8423B5A2910026F320 /* UnitTests_GameLogic.swift */,
 				935F7A8623B5A2910026F320 /* Info.plist */,
 			);
 			path = "UnitTests Bacc";
@@ -378,7 +378,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				935F7A8523B5A2910026F320 /* UnitTests_Bacc.swift in Sources */,
+				935F7A8523B5A2910026F320 /* UnitTests_GameLogic.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
