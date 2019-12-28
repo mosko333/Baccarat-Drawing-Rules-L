@@ -73,7 +73,7 @@
 		935F7A9023B5A2A20026F320 /* UITests Bacc.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "UITests Bacc.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		935F7A9223B5A2A20026F320 /* UITests_Bacc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITests_Bacc.swift; sourceTree = "<group>"; };
 		935F7A9423B5A2A20026F320 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		935F7A9B23B6DFE70026F320 /* CardDeck.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardDeck.swift; sourceTree = SOURCE_ROOT; };
+		935F7A9B23B6DFE70026F320 /* CardDeck.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CardDeck.swift; path = "Baccarat Drawing Rules L/Version2/Card Models/CardDeck.swift"; sourceTree = SOURCE_ROOT; };
 		935F7A9D23B6E03A0026F320 /* UnitTest_CardDeck.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnitTest_CardDeck.swift; sourceTree = "<group>"; };
 		935F7AA023B6F3D10026F320 /* CardSuit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardSuit.swift; sourceTree = "<group>"; };
 		935F7AA223B6F3E20026F320 /* CardValueName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardValueName.swift; sourceTree = "<group>"; };
@@ -194,7 +194,6 @@
 			isa = PBXGroup;
 			children = (
 				935F7A9F23B6F3750026F320 /* Card Models */,
-				935F7A9B23B6DFE70026F320 /* CardDeck.swift */,
 			);
 			path = Version2;
 			sourceTree = "<group>";
@@ -206,6 +205,7 @@
 				935F7AA223B6F3E20026F320 /* CardValueName.swift */,
 				935F7AA823B703C40026F320 /* CardImageName.swift */,
 				935F7AAA23B704740026F320 /* Card.swift */,
+				935F7A9B23B6DFE70026F320 /* CardDeck.swift */,
 			);
 			path = "Card Models";
 			sourceTree = "<group>";
