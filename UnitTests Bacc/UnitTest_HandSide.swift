@@ -90,10 +90,9 @@ class UnitTest_HandSide: XCTestCase {
         XCTAssertEqual(hand.cardThree, nil)
     }
 
-    // MARK: - helper methods
+    // MARK: - Helper Methods
 
     private func mocCard(_ name: CardValueName) -> Card {
         Card(suit: CardSuit.random(), valueName: name)
     }
-
 }

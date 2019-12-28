@@ -17,6 +17,8 @@ struct HandSide {
     private(set) var cardTwo: Card?
     private(set) var cardThree: Card?
 
+    // MARK: - Return Info
+
     /// Int representing the total of the first two cards when %10
     var twoCardTotal: Int? {
         // if the side has no cards yet then it needs to return nil
@@ -52,7 +54,4 @@ struct HandSide {
     mutating func drawThirdCard(_ card: Card) {
         cardThree = card
     }
-
-    // MARK: - Return Info Methods
-
 }
