@@ -71,6 +71,25 @@ class UnitTest_HandSide: XCTestCase {
         XCTAssertEqual(hand.isNatrual, false)
     }
 
+    func test_drawThirdCardWith() {
+        // Test empty hand
+        var hand = HandSide(sideName: .bank)
+        XCTAssertEqual(hand.cardThree, nil)
+
+        // Test hand without third card
+        hand.drawNewHandWith(firstCard: mocCard(.ace), secondCard: mocCard(.ten))
+        XCTAssertEqual(hand.cardThree, nil)
+
+        // Test that third card is entered correctly
+        let card = mocCard(.seven)
+        hand.drawThirdCard(card)
+        XCTAssertEqual(hand.cardThree, card)
+
+        // Test the third card is reset with a new hand
+        hand.drawNewHandWith(firstCard: mocCard(.ace), secondCard: mocCard(.ten))
+        XCTAssertEqual(hand.cardThree, nil)
+    }
+
     // MARK: - helper methods
 
     private func mocCard(_ name: CardValueName) -> Card {
