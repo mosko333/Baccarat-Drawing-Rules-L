@@ -37,39 +37,39 @@ class UnitTest_CardModels: XCTestCase {
         XCTAssert(false, "CardSuit is returning the same value every time")
     }
 
-    // MARK: - Test CardName
+    // MARK: - Test CardValueName
 
     func test_CardNameRandom() {
-        let currentName = CardName.returnRandom()
+        let currentName = CardValueName.returnRandom()
 
         // testing randomness is tricky, so instead we loop over the
         // method 100 times to make sure it's not returning the same
         // value every time
         for _ in 0..<100 {
-            if currentName != CardName.returnRandom() {
-                XCTAssert(true, "CardName.returnRandom returned a different value")
+            if currentName != CardValueName.returnRandom() {
+                XCTAssert(true, "CardValueName.returnRandom returned a different value")
                 return
             }
         }
         // if the for loop ends and a unique value has never been achieved then the test fails
-        XCTAssert(false, "CardName is returning the same value every time")
+        XCTAssert(false, "CardValueName is returning the same value every time")
     }
 
     // test that all the game values are returned as expected
     func test_CardNameGameValueReturned() {
-        XCTAssertEqual(CardName.ace.gameValue, 1)
-        XCTAssertEqual(CardName.two.gameValue, 2)
-        XCTAssertEqual(CardName.three.gameValue, 3)
-        XCTAssertEqual(CardName.four.gameValue, 4)
-        XCTAssertEqual(CardName.five.gameValue, 5)
-        XCTAssertEqual(CardName.six.gameValue, 6)
-        XCTAssertEqual(CardName.seven.gameValue, 7)
-        XCTAssertEqual(CardName.eight.gameValue, 8)
-        XCTAssertEqual(CardName.nine.gameValue, 9)
-        XCTAssertEqual(CardName.ten.gameValue, 10)
-        XCTAssertEqual(CardName.jack.gameValue, 10)
-        XCTAssertEqual(CardName.queen.gameValue, 10)
-        XCTAssertEqual(CardName.king.gameValue, 10)
+        XCTAssertEqual(CardValueName.ace.gameValue, 1)
+        XCTAssertEqual(CardValueName.two.gameValue, 2)
+        XCTAssertEqual(CardValueName.three.gameValue, 3)
+        XCTAssertEqual(CardValueName.four.gameValue, 4)
+        XCTAssertEqual(CardValueName.five.gameValue, 5)
+        XCTAssertEqual(CardValueName.six.gameValue, 6)
+        XCTAssertEqual(CardValueName.seven.gameValue, 7)
+        XCTAssertEqual(CardValueName.eight.gameValue, 8)
+        XCTAssertEqual(CardValueName.nine.gameValue, 9)
+        XCTAssertEqual(CardValueName.ten.gameValue, 10)
+        XCTAssertEqual(CardValueName.jack.gameValue, 10)
+        XCTAssertEqual(CardValueName.queen.gameValue, 10)
+        XCTAssertEqual(CardValueName.king.gameValue, 10)
     }
 
 }

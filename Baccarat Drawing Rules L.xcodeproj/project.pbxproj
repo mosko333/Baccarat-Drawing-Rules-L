@@ -26,8 +26,10 @@
 		935F7A9C23B6DFE70026F320 /* CardDeck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935F7A9B23B6DFE70026F320 /* CardDeck.swift */; };
 		935F7A9E23B6E03A0026F320 /* UnitTest_CardDeck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935F7A9D23B6E03A0026F320 /* UnitTest_CardDeck.swift */; };
 		935F7AA123B6F3D10026F320 /* CardSuit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935F7AA023B6F3D10026F320 /* CardSuit.swift */; };
-		935F7AA323B6F3E20026F320 /* CardName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935F7AA223B6F3E20026F320 /* CardName.swift */; };
+		935F7AA323B6F3E20026F320 /* CardValueName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935F7AA223B6F3E20026F320 /* CardValueName.swift */; };
 		935F7AA523B6F4720026F320 /* UnitTest_CardModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935F7AA423B6F4720026F320 /* UnitTest_CardModels.swift */; };
+		935F7AA923B703C40026F320 /* CardImageName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935F7AA823B703C40026F320 /* CardImageName.swift */; };
+		935F7AAB23B704740026F320 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935F7AAA23B704740026F320 /* Card.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,8 +76,10 @@
 		935F7A9B23B6DFE70026F320 /* CardDeck.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardDeck.swift; sourceTree = SOURCE_ROOT; };
 		935F7A9D23B6E03A0026F320 /* UnitTest_CardDeck.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnitTest_CardDeck.swift; sourceTree = "<group>"; };
 		935F7AA023B6F3D10026F320 /* CardSuit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardSuit.swift; sourceTree = "<group>"; };
-		935F7AA223B6F3E20026F320 /* CardName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardName.swift; sourceTree = "<group>"; };
+		935F7AA223B6F3E20026F320 /* CardValueName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardValueName.swift; sourceTree = "<group>"; };
 		935F7AA423B6F4720026F320 /* UnitTest_CardModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnitTest_CardModels.swift; sourceTree = "<group>"; };
+		935F7AA823B703C40026F320 /* CardImageName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardImageName.swift; sourceTree = "<group>"; };
+		935F7AAA23B704740026F320 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		E68D47C50473A858CEA6FF24 /* Pods-Baccarat Drawing Rules L.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Baccarat Drawing Rules L.release.xcconfig"; path = "Target Support Files/Pods-Baccarat Drawing Rules L/Pods-Baccarat Drawing Rules L.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -199,7 +203,9 @@
 			isa = PBXGroup;
 			children = (
 				935F7AA023B6F3D10026F320 /* CardSuit.swift */,
-				935F7AA223B6F3E20026F320 /* CardName.swift */,
+				935F7AA223B6F3E20026F320 /* CardValueName.swift */,
+				935F7AA823B703C40026F320 /* CardImageName.swift */,
+				935F7AAA23B704740026F320 /* Card.swift */,
 			);
 			path = "Card Models";
 			sourceTree = "<group>";
@@ -401,9 +407,11 @@
 				7E789948204B1CA9009B1899 /* ViewController.swift in Sources */,
 				7EEACB19208FC6DC008702AE /* WinStack.swift in Sources */,
 				935F7A9C23B6DFE70026F320 /* CardDeck.swift in Sources */,
-				935F7AA323B6F3E20026F320 /* CardName.swift in Sources */,
+				935F7AA323B6F3E20026F320 /* CardValueName.swift in Sources */,
+				935F7AAB23B704740026F320 /* Card.swift in Sources */,
 				7EEACB1C208FC84E008702AE /* WinViewController.swift in Sources */,
 				7E789946204B1CA9009B1899 /* AppDelegate.swift in Sources */,
+				935F7AA923B703C40026F320 /* CardImageName.swift in Sources */,
 				7E71C5FE204ED97E006485D6 /* CustomizableImageViewRotateAndRadius.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

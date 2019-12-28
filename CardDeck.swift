@@ -7,5 +7,4 @@
 //
 
 struct CardDeck {
-
 }

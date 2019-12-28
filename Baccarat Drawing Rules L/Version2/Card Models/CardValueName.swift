@@ -1,5 +1,5 @@
 //
-//  CardName.swift
+//  CardValueName.swift
 //  Baccarat Drawing Rules L
 //
 //  Created by Adam Moskovich on 12/27/19.
@@ -9,7 +9,7 @@
 /// All card names inside the suits,
 ///
 /// i.e `ace`, `five`, `queen`
-enum CardName: Int, CaseIterable {
+enum CardValueName: Int, CaseIterable {
     case ace
     case two
     case three
@@ -35,7 +35,7 @@ enum CardName: Int, CaseIterable {
     }
 
     /// Returns a random card name from the availible cases
-    static func returnRandom() -> CardName {
-        CardName.allCases.randomElement()!
+    static func returnRandom() -> CardValueName {
+        CardValueName.allCases.randomElement()!
     }
 }
