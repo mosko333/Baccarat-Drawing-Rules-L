@@ -14,7 +14,7 @@ enum CardSuit: CaseIterable {
     case spade
 
     /// Returns a random suit  from the availible cases
-    static func returnRandom() -> CardSuit {
+    static func random() -> CardSuit {
         CardSuit.allCases.randomElement()!
     }
 }

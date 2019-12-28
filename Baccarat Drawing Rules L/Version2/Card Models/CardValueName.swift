@@ -35,7 +35,7 @@ enum CardValueName: Int, CaseIterable {
     }
 
     /// Returns a random card name from the availible cases
-    static func returnRandom() -> CardValueName {
+    static func random() -> CardValueName {
         CardValueName.allCases.randomElement()!
     }
 }

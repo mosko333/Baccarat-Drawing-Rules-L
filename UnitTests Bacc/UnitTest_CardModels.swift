@@ -48,14 +48,14 @@ class UnitTest_CardModels: XCTestCase {
     // MARK: - test CardSuit
 
     func test_CardSuitRandom() {
-        let currentSuit = CardSuit.returnRandom()
+        let currentSuit = CardSuit.random()
 
         // testing randomness is tricky, so instead we loop over the
         // method 100 times to make sure it's not returning the same
         // value every time
         for _ in 0..<100 {
-            if currentSuit != CardSuit.returnRandom() {
-                XCTAssert(true, "CardSuit.returnRandom returned a different value")
+            if currentSuit != CardSuit.random() {
+                XCTAssert(true, "CardSuit.random returned a different value")
                 return
             }
         }
@@ -66,14 +66,14 @@ class UnitTest_CardModels: XCTestCase {
     // MARK: - Test CardValueName
 
     func test_CardNameRandom() {
-        let currentName = CardValueName.returnRandom()
+        let currentName = CardValueName.random()
 
         // testing randomness is tricky, so instead we loop over the
         // method 100 times to make sure it's not returning the same
         // value every time
         for _ in 0..<100 {
-            if currentName != CardValueName.returnRandom() {
-                XCTAssert(true, "CardValueName.returnRandom returned a different value")
+            if currentName != CardValueName.random() {
+                XCTAssert(true, "CardValueName.random returned a different value")
                 return
             }
         }
@@ -96,6 +96,25 @@ class UnitTest_CardModels: XCTestCase {
         XCTAssertEqual(CardValueName.jack.gameValue, 10)
         XCTAssertEqual(CardValueName.queen.gameValue, 10)
         XCTAssertEqual(CardValueName.king.gameValue, 10)
+    }
+
+    // MARK: - Test CardDeck
+
+    func test_CardDeckDraw() {
+        let cardDeck = CardDeck()
+        let currentCard = cardDeck.drawCard()
+
+        // testing randomness is tricky, so instead we loop over the
+        // method 100 times to make sure it's not returning the same
+        // value every time
+        for _ in 0..<100 {
+            if currentCard != cardDeck.drawCard() {
+                XCTAssert(true, "CardDeck().drawCard() returned a different value")
+                return
+            }
+        }
+        // if the for loop ends and a unique card has never been achieved then the test fails
+        XCTAssert(false, "CardDeck().drawCard() is returning the same value every time")
     }
 
 }

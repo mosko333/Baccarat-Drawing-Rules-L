@@ -7,4 +7,8 @@
 //
 
 struct CardDeck {
+
+    func drawCard() -> Card {
+        Card(suit: CardSuit.random(), valueName: CardValueName.random())
+    }
 }

@@ -6,7 +6,7 @@
 //  Copyright © 2019 Adam Moskovich. All rights reserved.
 //
 
-struct Card {
+struct Card: Equatable {
 
     let suit: CardSuit
     let valueName: CardValueName
