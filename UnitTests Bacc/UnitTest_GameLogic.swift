@@ -1,6 +1,6 @@
 //
-//  UnitTests_Bacc.swift
-//  UnitTests Bacc
+//  UnitTest_GameLogic.swift
+//  UnitTest_GameLogic
 //
 //  Created by Adam Moskovich on 12/26/19.
 //  Copyright © 2019 Adam Moskovich. All rights reserved.
@@ -9,7 +9,7 @@
 import XCTest
 @testable import Baccarat_Drawing_Rules_L
 
-class UnitTests_Bacc: XCTestCase {
+class UnitTest_GameLogic: XCTestCase {
 
     let gameLogic = GameLogic()
 

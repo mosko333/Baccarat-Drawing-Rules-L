@@ -24,9 +24,14 @@ enum CardName: Int, CaseIterable {
     case queen
     case king
 
+    /// rawValue starts at 0, the cards face values start at 1. So to get the face value we need to add 1
+    private var faceValue: Int {
+        self.rawValue + 1
+    }
+
     /// The max value returned in baccarat is always 10
     var gameValue: Int {
-        self.rawValue >= 10 ? self.rawValue : 10
+        self.faceValue <= 10 ? self.faceValue : 10
     }
 
     /// Returns a random card name from the availible cases

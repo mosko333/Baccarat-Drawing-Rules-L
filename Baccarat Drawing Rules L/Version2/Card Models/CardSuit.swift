@@ -6,7 +6,6 @@
 //  Copyright © 2019 Adam Moskovich. All rights reserved.
 //
 
-
 /// All the card suits
 enum CardSuit: CaseIterable {
     case heart
@@ -19,4 +18,3 @@ enum CardSuit: CaseIterable {
         CardSuit.allCases.randomElement()!
     }
 }
-
