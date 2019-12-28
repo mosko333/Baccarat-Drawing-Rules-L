@@ -24,7 +24,6 @@
 		935F7A8523B5A2910026F320 /* UnitTest_GameLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935F7A8423B5A2910026F320 /* UnitTest_GameLogic.swift */; };
 		935F7A9323B5A2A20026F320 /* UITests_Bacc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935F7A9223B5A2A20026F320 /* UITests_Bacc.swift */; };
 		935F7A9C23B6DFE70026F320 /* CardDeck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935F7A9B23B6DFE70026F320 /* CardDeck.swift */; };
-		935F7A9E23B6E03A0026F320 /* UnitTest_CardDeck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935F7A9D23B6E03A0026F320 /* UnitTest_CardDeck.swift */; };
 		935F7AA123B6F3D10026F320 /* CardSuit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935F7AA023B6F3D10026F320 /* CardSuit.swift */; };
 		935F7AA323B6F3E20026F320 /* CardValueName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935F7AA223B6F3E20026F320 /* CardValueName.swift */; };
 		935F7AA523B6F4720026F320 /* UnitTest_CardModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935F7AA423B6F4720026F320 /* UnitTest_CardModels.swift */; };
@@ -77,7 +76,6 @@
 		935F7A9223B5A2A20026F320 /* UITests_Bacc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITests_Bacc.swift; sourceTree = "<group>"; };
 		935F7A9423B5A2A20026F320 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		935F7A9B23B6DFE70026F320 /* CardDeck.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CardDeck.swift; path = "Baccarat Drawing Rules L/Version2/Card Models/CardDeck.swift"; sourceTree = SOURCE_ROOT; };
-		935F7A9D23B6E03A0026F320 /* UnitTest_CardDeck.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnitTest_CardDeck.swift; sourceTree = "<group>"; };
 		935F7AA023B6F3D10026F320 /* CardSuit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardSuit.swift; sourceTree = "<group>"; };
 		935F7AA223B6F3E20026F320 /* CardValueName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardValueName.swift; sourceTree = "<group>"; };
 		935F7AA423B6F4720026F320 /* UnitTest_CardModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnitTest_CardModels.swift; sourceTree = "<group>"; };
@@ -181,7 +179,6 @@
 			children = (
 				935F7A8423B5A2910026F320 /* UnitTest_GameLogic.swift */,
 				935F7A8623B5A2910026F320 /* Info.plist */,
-				935F7A9D23B6E03A0026F320 /* UnitTest_CardDeck.swift */,
 				935F7AA423B6F4720026F320 /* UnitTest_CardModels.swift */,
 				935F7AB323B71B9B0026F320 /* UnitTest_HandSide.swift */,
 			);
@@ -439,7 +436,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				935F7A9E23B6E03A0026F320 /* UnitTest_CardDeck.swift in Sources */,
 				935F7AB423B71B9B0026F320 /* UnitTest_HandSide.swift in Sources */,
 				935F7A8523B5A2910026F320 /* UnitTest_GameLogic.swift in Sources */,
 				935F7AA523B6F4720026F320 /* UnitTest_CardModels.swift in Sources */,

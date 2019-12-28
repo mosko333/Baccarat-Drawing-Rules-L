@@ -20,46 +20,54 @@ class UnitTest_HandSide: XCTestCase {
     }
 
     func test_twoCardTotal() {
+        // Test empty hand
+        var hand = HandSide(sideName: .player)
+        XCTAssertEqual(hand.twoCardTotal, nil)
+
         // Test total under 10
-        var hand = HandSide(sideName: .player, cardOne: mocCard(.five), cardTwo: mocCard(.ace))
+        hand.drawNewHandWith(firstCard: mocCard(.five), secondCard: mocCard(.ace))
         XCTAssertEqual(hand.twoCardTotal, 6)
 
         // Test total above 10 with a face
-        hand = HandSide(sideName: .bank, cardOne: mocCard(.nine), cardTwo: mocCard(.eight))
+        hand.drawNewHandWith(firstCard: mocCard(.nine), secondCard: mocCard(.eight))
         XCTAssertEqual(hand.twoCardTotal, 7)
 
         // Test total above 10 without a face
-        hand = HandSide(sideName: .bank, cardOne: mocCard(.king), cardTwo: mocCard(.two))
+        hand.drawNewHandWith(firstCard: mocCard(.king), secondCard: mocCard(.two))
         XCTAssertEqual(hand.twoCardTotal, 2)
 
         // Test total two face cards
-        hand = HandSide(sideName: .player, cardOne: mocCard(.jack), cardTwo: mocCard(.ten))
+        hand.drawNewHandWith(firstCard: mocCard(.jack), secondCard: mocCard(.ten))
         XCTAssertEqual(hand.twoCardTotal, 0)
     }
 
     func test_isNatrual() {
+        // Test empty hand
+        var hand = HandSide(sideName: .bank)
+        XCTAssertEqual(hand.isNatrual, nil)
+
         // Test natrual '8' under 10
-        var hand = HandSide(sideName: .player, cardOne: mocCard(.five), cardTwo: mocCard(.three))
+        hand.drawNewHandWith(firstCard: mocCard(.five), secondCard: mocCard(.three))
         XCTAssertEqual(hand.isNatrual, true)
 
         // Test natrual '9' under 10
-        hand = HandSide(sideName: .player, cardOne: mocCard(.four), cardTwo: mocCard(.five))
+        hand.drawNewHandWith(firstCard: mocCard(.four), secondCard: mocCard(.five))
         XCTAssertEqual(hand.isNatrual, true)
 
         // Test NO natrual under 10
-        hand = HandSide(sideName: .player, cardOne: mocCard(.five), cardTwo: mocCard(.ace))
+        hand.drawNewHandWith(firstCard: mocCard(.five), secondCard: mocCard(.ace))
         XCTAssertEqual(hand.isNatrual, false)
 
         // Test natrual '8' above 10
-        hand = HandSide(sideName: .bank, cardOne: mocCard(.nine), cardTwo: mocCard(.nine))
+        hand.drawNewHandWith(firstCard: mocCard(.nine), secondCard: mocCard(.nine))
         XCTAssertEqual(hand.isNatrual, true)
 
         // Test natrual '9' above 10
-        hand = HandSide(sideName: .bank, cardOne: mocCard(.jack), cardTwo: mocCard(.nine))
+        hand.drawNewHandWith(firstCard: mocCard(.jack), secondCard: mocCard(.nine))
         XCTAssertEqual(hand.isNatrual, true)
 
         // Test NO natrual above 10
-        hand = HandSide(sideName: .player, cardOne: mocCard(.jack), cardTwo: mocCard(.three))
+        hand.drawNewHandWith(firstCard: mocCard(.jack), secondCard: mocCard(.three))
         XCTAssertEqual(hand.isNatrual, false)
     }
 
