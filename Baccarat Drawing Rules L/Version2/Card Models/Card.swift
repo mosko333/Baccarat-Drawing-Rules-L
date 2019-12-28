@@ -11,8 +11,13 @@ struct Card: Equatable {
     let suit: CardSuit
     let valueName: CardValueName
 
+    /// Returns the cards numeric value for this game
+    var gameValue: Int {
+        valueName.gameValue
+    }
+
     /// Returns the name of the image
-    func imageName() -> String {
+    var imageName: String {
         CardImageName.of(self)
     }
 }

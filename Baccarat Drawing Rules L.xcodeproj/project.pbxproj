@@ -30,6 +30,9 @@
 		935F7AA523B6F4720026F320 /* UnitTest_CardModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935F7AA423B6F4720026F320 /* UnitTest_CardModels.swift */; };
 		935F7AA923B703C40026F320 /* CardImageName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935F7AA823B703C40026F320 /* CardImageName.swift */; };
 		935F7AAB23B704740026F320 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935F7AAA23B704740026F320 /* Card.swift */; };
+		935F7AB023B716450026F320 /* HandSide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935F7AAF23B716450026F320 /* HandSide.swift */; };
+		935F7AB223B717610026F320 /* SideName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935F7AB123B717610026F320 /* SideName.swift */; };
+		935F7AB423B71B9B0026F320 /* UnitTest_HandSide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935F7AB323B71B9B0026F320 /* UnitTest_HandSide.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,6 +83,9 @@
 		935F7AA423B6F4720026F320 /* UnitTest_CardModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnitTest_CardModels.swift; sourceTree = "<group>"; };
 		935F7AA823B703C40026F320 /* CardImageName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardImageName.swift; sourceTree = "<group>"; };
 		935F7AAA23B704740026F320 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		935F7AAF23B716450026F320 /* HandSide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HandSide.swift; sourceTree = "<group>"; };
+		935F7AB123B717610026F320 /* SideName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideName.swift; sourceTree = "<group>"; };
+		935F7AB323B71B9B0026F320 /* UnitTest_HandSide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnitTest_HandSide.swift; sourceTree = "<group>"; };
 		E68D47C50473A858CEA6FF24 /* Pods-Baccarat Drawing Rules L.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Baccarat Drawing Rules L.release.xcconfig"; path = "Target Support Files/Pods-Baccarat Drawing Rules L/Pods-Baccarat Drawing Rules L.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -177,6 +183,7 @@
 				935F7A8623B5A2910026F320 /* Info.plist */,
 				935F7A9D23B6E03A0026F320 /* UnitTest_CardDeck.swift */,
 				935F7AA423B6F4720026F320 /* UnitTest_CardModels.swift */,
+				935F7AB323B71B9B0026F320 /* UnitTest_HandSide.swift */,
 			);
 			path = "UnitTests Bacc";
 			sourceTree = "<group>";
@@ -193,6 +200,7 @@
 		935F7A9A23B6DEE70026F320 /* Version2 */ = {
 			isa = PBXGroup;
 			children = (
+				935F7AAE23B716290026F320 /* Hand Models */,
 				935F7A9F23B6F3750026F320 /* Card Models */,
 			);
 			path = Version2;
@@ -208,6 +216,15 @@
 				935F7A9B23B6DFE70026F320 /* CardDeck.swift */,
 			);
 			path = "Card Models";
+			sourceTree = "<group>";
+		};
+		935F7AAE23B716290026F320 /* Hand Models */ = {
+			isa = PBXGroup;
+			children = (
+				935F7AAF23B716450026F320 /* HandSide.swift */,
+				935F7AB123B717610026F320 /* SideName.swift */,
+			);
+			path = "Hand Models";
 			sourceTree = "<group>";
 		};
 		C3FC840B0DB85472A9FAFF91 /* Frameworks */ = {
@@ -402,6 +419,7 @@
 				935F7AA123B6F3D10026F320 /* CardSuit.swift in Sources */,
 				7EFDA952204ECB67005E8E9A /* CustomizableImageView.swift in Sources */,
 				7E4E7C4420826B1C00D2EE65 /* WinButtonLayout.swift in Sources */,
+				935F7AB223B717610026F320 /* SideName.swift in Sources */,
 				7E72B4BC2068320B00423F11 /* GameLogic.swift in Sources */,
 				7E4E7C4220824B2300D2EE65 /* DrawButtonSize.swift in Sources */,
 				7E789948204B1CA9009B1899 /* ViewController.swift in Sources */,
@@ -411,6 +429,7 @@
 				935F7AAB23B704740026F320 /* Card.swift in Sources */,
 				7EEACB1C208FC84E008702AE /* WinViewController.swift in Sources */,
 				7E789946204B1CA9009B1899 /* AppDelegate.swift in Sources */,
+				935F7AB023B716450026F320 /* HandSide.swift in Sources */,
 				935F7AA923B703C40026F320 /* CardImageName.swift in Sources */,
 				7E71C5FE204ED97E006485D6 /* CustomizableImageViewRotateAndRadius.swift in Sources */,
 			);
@@ -421,6 +440,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				935F7A9E23B6E03A0026F320 /* UnitTest_CardDeck.swift in Sources */,
+				935F7AB423B71B9B0026F320 /* UnitTest_HandSide.swift in Sources */,
 				935F7A8523B5A2910026F320 /* UnitTest_GameLogic.swift in Sources */,
 				935F7AA523B6F4720026F320 /* UnitTest_CardModels.swift in Sources */,
 			);

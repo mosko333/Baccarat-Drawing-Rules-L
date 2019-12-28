@@ -39,7 +39,7 @@ class UnitTest_CardModels: XCTestCase {
     func test_CardImageNameFromCard() {
         for suit in CardSuit.allCases {
             for valueName in CardValueName.allCases {
-                let imageName = Card(suit: suit, valueName: valueName).imageName()
+                let imageName = Card(suit: suit, valueName: valueName).imageName
                 XCTAssert(!imageName.isEmpty, "The is no imageName for this card")
             }
         }
