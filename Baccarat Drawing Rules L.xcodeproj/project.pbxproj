@@ -179,11 +179,11 @@
 		935F7A8323B5A2910026F320 /* UnitTests Bacc */ = {
 			isa = PBXGroup;
 			children = (
-				935F7A8423B5A2910026F320 /* UnitTest_GameLogic.swift */,
-				935F7A8623B5A2910026F320 /* Info.plist */,
 				935F7AA423B6F4720026F320 /* UnitTest_CardModels.swift */,
 				935F7AB323B71B9B0026F320 /* UnitTest_HandSide.swift */,
+				935F7A8423B5A2910026F320 /* UnitTest_GameLogic.swift */,
 				935F7AB523B87AA00026F320 /* UnitTest_HelperMethods.swift */,
+				935F7A8623B5A2910026F320 /* Info.plist */,
 			);
 			path = "UnitTests Bacc";
 			sourceTree = "<group>";
