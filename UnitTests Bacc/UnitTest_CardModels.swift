@@ -151,7 +151,7 @@ class UnitTest_CardModels: XCTestCase {
         // make a small shoe
         let shoe = CardShoe(numberOfDecks: 3)
 
-        while shoe.finiteCardsInShoe.count >= 13 {
+        while shoe.finiteCardsInShoe.count >= 25 {
             XCTAssertEqual(shoe.isLastHand, false, "It should only be the last hand if less than 13 cards are left")
             _ = shoe.drawCard()
         }

@@ -16,7 +16,7 @@ class CardShoe {
     /// An array of all the cards in the shoe
     private(set) var finiteCardsInShoe: [Card] = []
     // the min number of cards that need to be in the shoe to cantinue dealing
-    private let minCardCout = 13
+    private let minCardCout = 25
 
     /// A Bool indicating if anymore hands can be dealt after this one
     var isLastHand: Bool {
