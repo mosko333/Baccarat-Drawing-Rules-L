@@ -23,7 +23,7 @@
 		7EFDA952204ECB67005E8E9A /* CustomizableImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EFDA951204ECB67005E8E9A /* CustomizableImageView.swift */; };
 		935F7A8523B5A2910026F320 /* UnitTest_GameLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935F7A8423B5A2910026F320 /* UnitTest_GameLogic.swift */; };
 		935F7A9323B5A2A20026F320 /* UITests_Bacc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935F7A9223B5A2A20026F320 /* UITests_Bacc.swift */; };
-		935F7A9C23B6DFE70026F320 /* CardDeck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935F7A9B23B6DFE70026F320 /* CardDeck.swift */; };
+		935F7A9C23B6DFE70026F320 /* CardShoe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935F7A9B23B6DFE70026F320 /* CardShoe.swift */; };
 		935F7AA123B6F3D10026F320 /* CardSuit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935F7AA023B6F3D10026F320 /* CardSuit.swift */; };
 		935F7AA323B6F3E20026F320 /* CardValueName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935F7AA223B6F3E20026F320 /* CardValueName.swift */; };
 		935F7AA523B6F4720026F320 /* UnitTest_CardModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935F7AA423B6F4720026F320 /* UnitTest_CardModels.swift */; };
@@ -32,6 +32,7 @@
 		935F7AB023B716450026F320 /* HandSide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935F7AAF23B716450026F320 /* HandSide.swift */; };
 		935F7AB223B717610026F320 /* SideName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935F7AB123B717610026F320 /* SideName.swift */; };
 		935F7AB423B71B9B0026F320 /* UnitTest_HandSide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935F7AB323B71B9B0026F320 /* UnitTest_HandSide.swift */; };
+		935F7AB623B87AA00026F320 /* UnitTest_HelperMethods.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935F7AB523B87AA00026F320 /* UnitTest_HelperMethods.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,7 +76,7 @@
 		935F7A9023B5A2A20026F320 /* UITests Bacc.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "UITests Bacc.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		935F7A9223B5A2A20026F320 /* UITests_Bacc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITests_Bacc.swift; sourceTree = "<group>"; };
 		935F7A9423B5A2A20026F320 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		935F7A9B23B6DFE70026F320 /* CardDeck.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CardDeck.swift; path = "Baccarat Drawing Rules L/Version2/Card Models/CardDeck.swift"; sourceTree = SOURCE_ROOT; };
+		935F7A9B23B6DFE70026F320 /* CardShoe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CardShoe.swift; path = "Baccarat Drawing Rules L/Version2/Card Models/CardShoe.swift"; sourceTree = SOURCE_ROOT; };
 		935F7AA023B6F3D10026F320 /* CardSuit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardSuit.swift; sourceTree = "<group>"; };
 		935F7AA223B6F3E20026F320 /* CardValueName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardValueName.swift; sourceTree = "<group>"; };
 		935F7AA423B6F4720026F320 /* UnitTest_CardModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnitTest_CardModels.swift; sourceTree = "<group>"; };
@@ -84,6 +85,7 @@
 		935F7AAF23B716450026F320 /* HandSide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HandSide.swift; sourceTree = "<group>"; };
 		935F7AB123B717610026F320 /* SideName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideName.swift; sourceTree = "<group>"; };
 		935F7AB323B71B9B0026F320 /* UnitTest_HandSide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnitTest_HandSide.swift; sourceTree = "<group>"; };
+		935F7AB523B87AA00026F320 /* UnitTest_HelperMethods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnitTest_HelperMethods.swift; sourceTree = "<group>"; };
 		E68D47C50473A858CEA6FF24 /* Pods-Baccarat Drawing Rules L.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Baccarat Drawing Rules L.release.xcconfig"; path = "Target Support Files/Pods-Baccarat Drawing Rules L/Pods-Baccarat Drawing Rules L.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -181,6 +183,7 @@
 				935F7A8623B5A2910026F320 /* Info.plist */,
 				935F7AA423B6F4720026F320 /* UnitTest_CardModels.swift */,
 				935F7AB323B71B9B0026F320 /* UnitTest_HandSide.swift */,
+				935F7AB523B87AA00026F320 /* UnitTest_HelperMethods.swift */,
 			);
 			path = "UnitTests Bacc";
 			sourceTree = "<group>";
@@ -210,7 +213,7 @@
 				935F7AA223B6F3E20026F320 /* CardValueName.swift */,
 				935F7AA823B703C40026F320 /* CardImageName.swift */,
 				935F7AAA23B704740026F320 /* Card.swift */,
-				935F7A9B23B6DFE70026F320 /* CardDeck.swift */,
+				935F7A9B23B6DFE70026F320 /* CardShoe.swift */,
 			);
 			path = "Card Models";
 			sourceTree = "<group>";
@@ -421,7 +424,7 @@
 				7E4E7C4220824B2300D2EE65 /* DrawButtonSize.swift in Sources */,
 				7E789948204B1CA9009B1899 /* ViewController.swift in Sources */,
 				7EEACB19208FC6DC008702AE /* WinStack.swift in Sources */,
-				935F7A9C23B6DFE70026F320 /* CardDeck.swift in Sources */,
+				935F7A9C23B6DFE70026F320 /* CardShoe.swift in Sources */,
 				935F7AA323B6F3E20026F320 /* CardValueName.swift in Sources */,
 				935F7AAB23B704740026F320 /* Card.swift in Sources */,
 				7EEACB1C208FC84E008702AE /* WinViewController.swift in Sources */,
@@ -438,6 +441,7 @@
 			files = (
 				935F7AB423B71B9B0026F320 /* UnitTest_HandSide.swift in Sources */,
 				935F7A8523B5A2910026F320 /* UnitTest_GameLogic.swift in Sources */,
+				935F7AB623B87AA00026F320 /* UnitTest_HelperMethods.swift in Sources */,
 				935F7AA523B6F4720026F320 /* UnitTest_CardModels.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

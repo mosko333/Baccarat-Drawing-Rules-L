@@ -48,37 +48,17 @@ class UnitTest_CardModels: XCTestCase {
     // MARK: - test CardSuit
 
     func test_CardSuitRandom() {
-        let currentSuit = CardSuit.random()
-
-        // testing randomness is tricky, so instead we loop over the
-        // method 100 times to make sure it's not returning the same
-        // value every time
-        for _ in 0..<100 {
-            if currentSuit != CardSuit.random() {
-                XCTAssert(true, "CardSuit.random returned a different value")
-                return
-            }
-        }
-        // if the for loop ends and a unique value has never been achieved then the test fails
-        XCTAssert(false, "CardSuit is returning the same value every time")
+        // Loop over the method 100 times to make sure
+        // it returns at least one unique value
+        UnitTest_HelperMethods.test_uniqueness(numOfReps: 100, testingMethod: CardSuit.random)
     }
 
     // MARK: - Test CardValueName
 
     func test_CardNameRandom() {
-        let currentName = CardValueName.random()
-
-        // testing randomness is tricky, so instead we loop over the
-        // method 100 times to make sure it's not returning the same
-        // value every time
-        for _ in 0..<100 {
-            if currentName != CardValueName.random() {
-                XCTAssert(true, "CardValueName.random returned a different value")
-                return
-            }
-        }
-        // if the for loop ends and a unique value has never been achieved then the test fails
-        XCTAssert(false, "CardValueName is returning the same value every time")
+        // Loop over the method 100 times to make sure
+        // it returns at least one unique value
+        UnitTest_HelperMethods.test_uniqueness(numOfReps: 100, testingMethod: CardValueName.random)
     }
 
     // test that all the game values are returned as expected
@@ -98,23 +78,24 @@ class UnitTest_CardModels: XCTestCase {
         XCTAssertEqual(CardValueName.king.gameValue, 10)
     }
 
-    // MARK: - Test CardDeck
+    // MARK: - Test cardShoe
 
-    func test_CardDeckDraw() {
-        let cardDeck = CardDeck()
-        let currentCard = cardDeck.drawCard()
+    func test_cardShoeInit() {
 
-        // testing randomness is tricky, so instead we loop over the
-        // method 100 times to make sure it's not returning the same
-        // value every time
-        for _ in 0..<100 {
-            if currentCard != cardDeck.drawCard() {
-                XCTAssert(true, "CardDeck().drawCard() returned a different value")
-                return
-            }
-        }
-        // if the for loop ends and a unique card has never been achieved then the test fails
-        XCTAssert(false, "CardDeck().drawCard() is returning the same value every time")
     }
 
+    func test_cardShoeDrawUnlimited() {
+        let cardShoe = CardShoe(withUnlimitedCards: true)
+
+        // testing randomness is tricky, so instead we loop over the
+        // method 20 times to make sure it's not returning the same
+        // value every time
+        UnitTest_HelperMethods.test_uniqueness(numOfReps: 20, testingMethod: cardShoe.drawCard)
+    }
+
+    func test_cardShoeDrawFinite() {
+        let cardShoe = CardShoe(withUnlimitedCards: false, orNumberOfDecks: 4)
+        // with only 4 decks, the same card should never appear 5 times
+        UnitTest_HelperMethods.test_uniqueness(numOfReps: 5, testingMethod: cardShoe.drawCard)
+    }
 }
